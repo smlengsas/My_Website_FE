@@ -18,6 +18,37 @@ export default function createRoutes() {
            .catch(errorLoading);
        },
      },
+
+     {
+      path: '/portfolio',
+      name: 'portfolio',
+      getComponent(nextState, comMod) {
+        import('containers/Portfolio')
+          .then(loadModule(comMod))
+          .catch(errorLoading);
+      },
+    },
+
+     {
+      path: '/about',
+      name: 'about',
+      getComponent(nextState, comMod) {
+        import('containers/About')
+          .then(loadModule(comMod))
+          .catch(errorLoading);
+      },
+    },
+
+    {
+     path: '/contact',
+     name: 'contact',
+     getComponent(nextState, comMod) {
+       import('containers/Contact')
+         .then(loadModule(comMod))
+         .catch(errorLoading);
+     },
+   },
+
      {
       path: '*',
       name: 'notfound',

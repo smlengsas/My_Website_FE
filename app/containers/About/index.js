@@ -1,6 +1,6 @@
 /*
  *
- * Home
+ * About
  *
  */
 
@@ -12,19 +12,19 @@ import './styleM.css';
 
 import NavBar from 'components/NavBar';
 
-export default class Home extends React.PureComponent {
+export default class About extends React.PureComponent {
   render() {
     return (
       <div className="container">
-        <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
+        <Helmet title="About" meta={[ { name: 'description', content: 'Description of About' }]}/>
 
         <NavBar/>
-
+        
       </div>
     );
   }
 }
 
-Home.contextTypes = {
+About.contextTypes = {
   router: React.PropTypes.object
 };

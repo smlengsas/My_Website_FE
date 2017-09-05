@@ -1,6 +1,6 @@
 /*
  *
- * Home
+ * Portfolio
  *
  */
 
@@ -12,11 +12,11 @@ import './styleM.css';
 
 import NavBar from 'components/NavBar';
 
-export default class Home extends React.PureComponent {
+export default class Portfolio extends React.PureComponent {
   render() {
     return (
       <div className="container">
-        <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
+        <Helmet title="Portfolio" meta={[ { name: 'description', content: 'Description of Portfolio' }]}/>
 
         <NavBar/>
 
@@ -25,6 +25,6 @@ export default class Home extends React.PureComponent {
   }
 }
 
-Home.contextTypes = {
+Portfolio.contextTypes = {
   router: React.PropTypes.object
 };

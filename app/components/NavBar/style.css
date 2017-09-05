@@ -1,0 +1,55 @@
+/* NavBar Styles */
+.navBar {
+  display:flex;
+  flex-direction:row;
+  background:#E91E63;
+  width:100%;
+  height:100px;
+  justify-content:space-between;
+  align-items:center;
+  border-color: #000000;
+  border-width: thick;
+  border-style:solid;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.siteName {
+  width:35%;
+  font-size:3.25em;
+  margin-left:40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-variant:small-caps;
+  font-family: 'Poiret One', cursive;
+  line-height:40px;
+  font-weight:bold;
+  color:#FFFFFF;
+}
+
+.nav {
+  width:80%;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  margin-right:15px;
+  margin-left: 15px;
+}
+
+.navButton {
+  color:#FFFFFF;
+  font-size:1.4em;
+  text-decoration:none;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 5px;
+  font-weight:bold;
+  font-variant:small-caps;
+  font-family:"Poiret One";
+}
+
+.menuIcon {
+  display:none;
+}
