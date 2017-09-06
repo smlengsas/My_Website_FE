@@ -15,11 +15,11 @@ import NavBar from 'components/NavBar';
 export default class About extends React.PureComponent {
   render() {
     return (
-      <div className="container">
+      <div className="container backgroundAbout">
         <Helmet title="About" meta={[ { name: 'description', content: 'Description of About' }]}/>
 
         <NavBar/>
-        
+
       </div>
     );
   }

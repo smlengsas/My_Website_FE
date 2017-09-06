@@ -11,14 +11,16 @@ import './style.css';
 import './styleM.css';
 
 import NavBar from 'components/NavBar';
+import Slider from "components/Slider";
 
 export default class Home extends React.PureComponent {
   render() {
     return (
-      <div className="container">
+      <div className="container homeBackground">
         <Helmet title="Home" meta={[ { name: 'description', content: 'Description of Home' }]}/>
 
         <NavBar/>
+        <Slider/>
 
       </div>
     );

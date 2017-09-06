@@ -5,3 +5,10 @@
   flex-direction:column;
   min-height:100vh;
 }
+
+.backgroundAbout {
+  background-image: url('../../IMAGES/back_repeat.jpg');
+  background-repeat:repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}

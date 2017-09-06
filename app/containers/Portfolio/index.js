@@ -15,7 +15,7 @@ import NavBar from 'components/NavBar';
 export default class Portfolio extends React.PureComponent {
   render() {
     return (
-      <div className="container">
+      <div className="container portfolioBackground">
         <Helmet title="Portfolio" meta={[ { name: 'description', content: 'Description of Portfolio' }]}/>
 
         <NavBar/>
