@@ -11,6 +11,7 @@ import './style.css';
 import './styleM.css';
 
 import NavBar from 'components/NavBar';
+import ImageGrid from 'components/ImageGrid';
 
 export default class Portfolio extends React.PureComponent {
   render() {
@@ -19,6 +20,7 @@ export default class Portfolio extends React.PureComponent {
         <Helmet title="Portfolio" meta={[ { name: 'description', content: 'Description of Portfolio' }]}/>
 
         <NavBar/>
+        <ImageGrid/>
 
       </div>
     );

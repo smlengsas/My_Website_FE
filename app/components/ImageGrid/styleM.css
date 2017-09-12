@@ -1,0 +1,21 @@
+/* ImageGrid Mobile Styles */
+@media (max-width: 450px) {
+  .grid {
+    flex-direction:column;
+    flex-wrap:wrap;
+  }
+
+  .gridItem {
+    width:auto;
+    margin:30px;
+    margin-left:30px;
+    margin-right:30px;
+    height: auto;
+    padding: inherit;
+  }
+}
+
+img{
+  max-width: 500%;
+  max-height: 200px;
+}

@@ -15,11 +15,11 @@ import NavBar from 'components/NavBar';
 export default class Contact extends React.PureComponent {
   render() {
     return (
-      <div className="container">
+      <div className="container backgroundContact ">
         <Helmet title="Contact" meta={[ { name: 'description', content: 'Description of Contact' }]}/>
 
         <NavBar/>
-        
+
       </div>
     );
   }

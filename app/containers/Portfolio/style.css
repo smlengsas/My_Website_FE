@@ -10,10 +10,12 @@
   justify-content:flex-start;
 }
 
+
+
 .portfolioBackground {
-  background-image: url("../../IMAGES/LOGO_image.jpg");
-  background-size: 540px;
+  background-image: url("../../IMAGES/back_repeat.jpg");
+  background-size: 200px;
   background-position:center center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
 }
