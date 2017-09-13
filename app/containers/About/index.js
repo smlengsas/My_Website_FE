@@ -11,6 +11,7 @@ import './style.css';
 import './styleM.css';
 
 import NavBar from 'components/NavBar';
+import Blog from 'components/Blog';
 
 export default class About extends React.PureComponent {
   render() {
@@ -19,6 +20,7 @@ export default class About extends React.PureComponent {
         <Helmet title="About" meta={[ { name: 'description', content: 'Description of About' }]}/>
 
         <NavBar/>
+        <Blog/>
 
       </div>
     );

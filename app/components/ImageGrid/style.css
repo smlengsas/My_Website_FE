@@ -20,6 +20,7 @@
 .gridImage {
   border: 6px solid #000000;
   box-shadow: 8px 8px #ee3b76;
+  width: 35vw;
 
 }
 
@@ -29,9 +30,4 @@
   transform: scale(1.1);
   border: 2px solid #000000;
 
-}
-
-img{
-  max-width: 500%;
-  max-height: 200px;
 }

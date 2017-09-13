@@ -1,0 +1,48 @@
+/* Blog Styles */
+
+.blogBox {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 30px;
+  width: 500px;
+  height: auto;
+  background-position: left;
+  margin: 50px;
+  font-family: 'Poiret One';
+  font-size: 1.5em;
+  font-weight: bold;
+  border-color: #000000;
+  border: 6px solid #000000;
+  box-shadow: 8px 8px #EE3B76;
+  justify-content: center;
+
+}
+
+.blogBox a {
+  height: auto;
+  color: #000000;
+  font-family: 'Poiret One';
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.blogBox p {
+  height: auto;
+  font-family: 'Poiret One';
+  font-size: 1em;
+  line-height: normal;
+  font-weight: bold;
+  text-align: justify;
+  text-overflow: ellipsis;
+  word-spacing: normal;
+}
+
+.blogBox q {
+  height: auto;
+  font-family: 'Poiret One';
+  font-size: .7em;
+  line-height: normal;
+  font-weight:normal;
+  word-spacing: normal;
+}

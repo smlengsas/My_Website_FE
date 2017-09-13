@@ -1,0 +1,55 @@
+/* ContactInfo Styles */
+
+.contactBox {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 30px;
+  width:50vw;
+  height: auto;
+  margin:30px;
+  background-position: center;
+  font-family: 'Poiret One';
+  border-color: #000000;
+  border: 6px solid #000000;
+  box-shadow: 8px 8px #EE3B76;
+  justify-content: center;
+}
+
+.contactLinks {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  width: 100px;
+
+}
+
+.contactLinks a {
+  color: #000000;
+  background-position: right;
+  font-family: 'Poiret One';
+  font-size: 2em;
+  font-weight: bolder;
+  justify-content: center;
+  white-space: normal;
+}
+
+.contactBox p {
+  color: #000000;
+  background-position: left;
+  font-family: 'Poiret One';
+  font-size: 1.5em;
+  font-weight: bold;
+  justify-content: center;
+  word-break:keep-all;
+  word-spacing: .05em;
+  word-spacing: inherit;
+}
+
+.contactBox b {
+  color: #000000;
+  background-position: left;
+  font-family: 'Poiret One';
+  font-size: 2em;
+  font-weight:bolder;
+  justify-content: center;
+}

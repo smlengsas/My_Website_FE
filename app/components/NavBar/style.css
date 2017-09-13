@@ -2,7 +2,7 @@
 .navBar {
   display:flex;
   flex-direction:row;
-  background:#E91E63;
+  background:#EE3B76;
   background-size: cover;
   width:auto;
   height:100px;
@@ -12,7 +12,6 @@
   border-width: thick;
   border-style:solid;
   padding-right: 20px;
-
 }
 
 .siteName {
