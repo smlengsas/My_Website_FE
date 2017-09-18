@@ -19,7 +19,7 @@ export default class ContactInfo extends React.PureComponent {
 
             <header>
               <h3>
-              <b>Summer Lotus Designs</b>
+              <b>Sassy Lines/Graphic Designs</b>
 
               </h3>
 
@@ -31,7 +31,7 @@ export default class ContactInfo extends React.PureComponent {
             </section>
 
             <section>
-              <p>Contact Sarah Lengsas at Summer Lotus Designs
+              <p>Contact Sarah Lengsas at Sassy Lines/Graphic Designs
               for all of your Design Needs, Questions, Comments and Ideas.</p>
 
             </section>
