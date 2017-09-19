@@ -4,7 +4,8 @@
   background-color: #FFFFFF;
   color: #000000;
   padding: 30px;
-  width: 500px;
+  width: 75%;
+  flex-wrap: wrap;
   height: auto;
   background-position: left;
   margin: 50px;
@@ -24,7 +25,27 @@
   font-family: 'Poiret One';
   font-size: 1.5em;
   font-weight: bold;
+  text-align:left;
+}
+
+.blogBox b {
+  height: auto;
+  color: #000000;
+  font-family: 'Poiret One';
+  font-size: .8em;
+  font-weight: bold;
   text-align: justify;
+  font-variant: small-caps;
+}
+
+.blogBox footer {
+  height: auto;
+  color: #EE3B76;
+  font-family: 'Poiret One';
+  font-size: .8em;
+  font-weight: bold;
+  text-align: justify;
+  font-variant: small-caps;
 }
 
 .blogBox p {
@@ -42,7 +63,7 @@
   height: auto;
   font-family: 'Poiret One';
   font-size: .7em;
-  line-height: normal;
+  line-height: 10px;
   font-weight:normal;
   word-spacing: normal;
 }

@@ -21,24 +21,19 @@ export default class Blog extends React.PureComponent {
 
           <header>
             <h3>
-            <a href="/my-blog-post">My blog post</a>
+            <a href="/my-blog-post">{this.props.blogTitle}</a>
 
             </h3>
 
           </header>
 
           <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis. More text. More text. More text. More text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis. More text. More text. More text. More text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis. More text. More text. More text. More text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis. More text. More text. More text. More text.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis. More text. More text. More text. More text.</p>
+            <p>{this.props.blogContent}</p>
           </section>
 
-          <blockquote cite="https://www.linkedin.com/in/sarah-lengsas-759898140">
-            <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec viverra nec nulla vitae mollis.</q>
-          </blockquote>
-
           <footer>
-            <small>
-            Posted on <time datetime="2017-09-13T10:00">Sep 13</time> in <a href="/category/ideas">Ideas</a>
-            </small>
+            <b>Created on {this.props.timeCreated} in </b>
+            <c><a href="/category">{this.props.blogCategory}</a></c>
           </footer>
 
         </article>
