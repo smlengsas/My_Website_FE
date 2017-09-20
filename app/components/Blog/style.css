@@ -4,7 +4,7 @@
   background-color: #FFFFFF;
   color: #000000;
   padding: 30px;
-  width: 75%;
+  width: 50vw;
   flex-wrap: wrap;
   height: auto;
   background-position: left;
@@ -16,6 +16,7 @@
   border: 6px solid #000000;
   box-shadow: 8px 8px #EE3B76;
   justify-content: center;
+  flex-shrink: 1;
 
 }
 

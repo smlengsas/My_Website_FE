@@ -42,9 +42,8 @@ export default class NavBar extends React.PureComponent {
         <nav className="navMobile">
         <Link to="/" className="navButton">Home</Link>
         <Link to="/portfolio" className="navButton">Portfolio</Link>
-        <Link to="/about" className="navButton">About</Link>
+        <Link to="/about" className="navButton">Blog</Link>
         <Link to="/contact" className="navButton">Contact</Link>
-        <Link to="/signIn" className="navButton">SignIn</Link>
         </nav>
       )
     }
@@ -58,14 +57,12 @@ export default class NavBar extends React.PureComponent {
           <img className="logo" src={require("../../IMAGES/LOGO_image1.jpg")}/>
 
           <div className="siteName">Sassy Lines</div>
-          <div className="siteTitle"><b>Graphic Designs</b> </div>
 
           <nav className="nav">
           <Link to="/" className="navButton">Home</Link>
           <Link to="/portfolio" className="navButton">Portfolio</Link>
-          <Link to="/about" className="navButton">About</Link>
+          <Link to="/about" className="navButton">Blog</Link>
           <Link to="/contact" className="navButton">Contact</Link>
-          <Link to="/signIn" className="navButton">SignIn</Link>
           </nav>
 
           <Bars className="menuIcon" onClick={this.handleMenu}/>

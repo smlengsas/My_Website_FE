@@ -47,9 +47,19 @@ export default function createRoutes() {
          .then(loadModule(comMod))
          .catch(errorLoading);
      },
-   },
+    },
 
-     {
+    {
+     path: '/signIn',
+     name: 'signIn',
+     getComponent(nextState, comMod) {
+       import('containers/SignIn')
+         .then(loadModule(comMod))
+         .catch(errorLoading);
+     },
+    },
+
+    {
       path: '*',
       name: 'notfound',
       getComponent(nextState, comMod) {

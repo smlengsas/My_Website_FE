@@ -1,34 +1,24 @@
 /* NavBar Mobile Styles */
-@media (max-width: 425px) {
+@media (max-width: 768px) {
 
   .siteName {
-    width:35%;
-    font-size:3em;
-    margin-left: 10px;
+    width:50%;
+    font-size:4em;
+    float: left;
     margin-top: 20px;
     margin-bottom: 20px;
     font-variant:small-caps;
     font-family: 'Poiret One', cursive;
-    line-height:40px;
+    line-height:60px;
     font-weight:bold;
     color:#FFFFFF;
     flex-wrap: wrap;
     flex-direction: row;
+    font-size-adjust: 25%;
+    flex-shrink: 1;
   }
 
-  .siteTitle b {
-    width:25%;
-    margin-left: 10px;
-    font-size:1.5em;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-variant:small-caps;
-    font-family: 'Poiret One', cursive;
-    line-height:20px;
-    font-weight:bold;
-    color:#FFFFFF;
-    flex-wrap: wrap;
-  }
+
 
   .nav {
     display:none;
