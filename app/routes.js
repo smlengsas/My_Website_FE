@@ -60,6 +60,16 @@ export default function createRoutes() {
     },
 
     {
+     path: '/blogInput',
+     name: 'blogInput',
+     getComponent(nextState, comMod) {
+       import('containers/BlogInput')
+         .then(loadModule(comMod))
+         .catch(errorLoading);
+     },
+    },
+
+    {
       path: '*',
       name: 'notfound',
       getComponent(nextState, comMod) {

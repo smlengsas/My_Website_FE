@@ -12,27 +12,32 @@ import './styleM.css';
 export default class ContactInfo extends React.PureComponent {
   render() {
     return (
-      <div>
+      <div className='contact-div'>
         <div>
 
           <article className="contactBox">
 
-            <header>
+            <header className='header'>
               <h3>
-              <b>Sassy Lines/Graphic Designs</b>
+              <b>Sassy Lines / Graphic Designs</b>
 
               </h3>
 
             </header>
 
             <section>
-              <p>~ Contemporary Design ~ Artistic Ingenuity ~ Imaginative Ideas. </p>
+              <p> ~ Contemporary Design ~ </p>
+              <p> ~ Artistic Ingenuity ~ </p>
+              <p> ~ Imaginative Ideas ~ </p>
 
             </section>
 
             <section>
-              <p><i>What Can Design Do For You?</i> Contact Sarah Lengsas at Sassy Lines/Graphic Designs
-              for all of your Design Needs, Questions, Comments and Ideas.</p>
+              <p><i>What Can Design Do For You? </i></p>
+              <p>Contact Sarah Lengsas at </p>
+              <p>Sassy Lines / Graphic Designs</p>
+              <p>for all of your Design Questions, </p>
+              <p>Needs, Comments, and Ideas.</p>
 
             </section>
 
@@ -42,7 +47,7 @@ export default class ContactInfo extends React.PureComponent {
           <a href="https://www.linkedin.com/in/sarah-lengsas-759898140" className="contactBox">LinkedIn</a>
           <a href="https://smlengsas.carbonmade.com/" className="contactBox">CarbonMade</a>
           <a href="mailto:smlengsas@gmail.com" className="contactBox">Email</a>
-          <a href="/signIn" className="contactBox">SignIn</a>
+          <a href="/signIn" className="contactBox">Admin</a>
         </div>
 
       </div>

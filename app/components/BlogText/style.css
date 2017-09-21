@@ -1,0 +1,52 @@
+/* BlogText Styles */
+.blogTextBox {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 30px;
+  width: 50vw;
+  flex-wrap: wrap;
+  height: auto;
+  background-position: left;
+  margin: 50px;
+  font-family: 'Poiret One';
+  font-size: 1.5em;
+  font-weight: bold;
+  border-color: #000000;
+  border: 6px solid #000000;
+  box-shadow: 8px 8px #EE3B76;
+  justify-content: center;
+  flex-shrink: 1;
+
+}
+
+.blogTitle {
+  background-color: #EE3B76;
+  color: #000000;
+}
+
+.blogTitle:focus {
+  outline: none;
+}
+
+.saveButton {
+  background-color: #EE3B76;
+  color: #FFFFFF;
+  width:60px;
+  padding: 20px;
+}
+
+.saveButton:focus {
+  outline: none;
+}
+
+.postButton {
+  background-color: #EE3B76;
+  color: #FFFFFF;
+  width:60px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.postButton:focus {
+  outline: none;
+}

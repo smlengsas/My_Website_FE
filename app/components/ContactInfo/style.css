@@ -13,6 +13,9 @@
   border: 6px solid #000000;
   box-shadow: 8px 8px #EE3B76;
   justify-content: center;
+  line-height: 50px;
+  word-spacing: normal;
+  text-align: center;
 }
 
 .contactLinks {
@@ -20,6 +23,8 @@
   flex-direction:row;
   flex-wrap: wrap;
   width: 100px;
+  text-align: center;
+  justify-content: center;
 
 }
 
@@ -31,6 +36,7 @@
   font-weight: bolder;
   justify-content: center;
   white-space: normal;
+  text-align: center;
 }
 
 .contactBox p {
@@ -42,14 +48,24 @@
   justify-content: center;
   word-break:keep-all;
   word-spacing: .05em;
-  word-spacing: inherit;
+  text-align: center;
 }
 
 .contactBox b {
   color: #000000;
   background-position: left;
   font-family: 'Poiret One';
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight:bolder;
   justify-content: center;
+  text-align: center;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }

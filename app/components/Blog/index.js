@@ -14,14 +14,14 @@ export default class Blog extends React.PureComponent {
 
   render() {
     return (
-      <div>
+      <div classname="container blogBoxContainer">
 
 
         <article className="blogBox">
 
           <header>
             <h3>
-            <a href="/my-blog-post">{this.props.blogTitle}</a>
+            <a href="/title">{this.props.blogTitle}</a>
 
             </h3>
 

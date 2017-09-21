@@ -1,0 +1,12 @@
+/* BlogInput Styles */
+
+.container {
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+.blogInputBackground {
+  background-color: #000000;
+
+}
