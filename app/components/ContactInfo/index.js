@@ -31,7 +31,7 @@ export default class ContactInfo extends React.PureComponent {
             </section>
 
             <section>
-              <p>Contact Sarah Lengsas at Sassy Lines/Graphic Designs
+              <p><i>What Can Design Do For You?</i> Contact Sarah Lengsas at Sassy Lines/Graphic Designs
               for all of your Design Needs, Questions, Comments and Ideas.</p>
 
             </section>
@@ -40,8 +40,8 @@ export default class ContactInfo extends React.PureComponent {
         </div>
         <div className="contactLinks">
           <a href="https://www.linkedin.com/in/sarah-lengsas-759898140" className="contactBox">LinkedIn</a>
-          <a href="mailto:smlengsas@gmail.com" className="contactBox">Email</a>
           <a href="https://smlengsas.carbonmade.com/" className="contactBox">CarbonMade</a>
+          <a href="mailto:smlengsas@gmail.com" className="contactBox">Email</a>
           <a href="/signIn" className="contactBox">SignIn</a>
         </div>
 

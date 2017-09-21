@@ -52,7 +52,7 @@ export default class SignInBox extends React.PureComponent {
       else if (json.token){
         sessionStorage.setItem("token", json.token);
         alert("Welcome");
-        _this.context.router.push("/");
+        _this.context.router.push("/about");
       }
     })
   }
@@ -61,8 +61,8 @@ export default class SignInBox extends React.PureComponent {
     return (
       <div>
         <div className="signInContainer">
-          <input type="text" className="signInName" onChange={this.handleEmail} onKeyDown={this.handleEnter}value={this.state.inputUser} />
-          <input type="password" className="signInPassword" onChange={this.handlePasword}/>
+          <input type="text" className="signInName" onChange={this.handleEmail} onKeyDown={this.handleEnter}value={this.state.email} />
+          <input type="password" className="signInPassword" onChange={this.handlePassword} value={this.state.password}/>
           <input type="submit" value="Enter" className="signInButton" onClick={this.signIn} />
         </div>
 
