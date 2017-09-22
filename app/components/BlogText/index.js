@@ -12,6 +12,60 @@ import './styleM.css';
 
 export default class BlogText extends React.PureComponent {
 
+  constructor() {
+    super();
+    this.state={
+      store:'',
+      listItems:[],
+      blogTitle:'',
+      blogContent:'',
+      blogCategory:''
+    }
+  }
+
+  handleBlogTitle = (event) => {
+    this.setState({
+      blogTitle:event.target.value
+    })
+  };
+  handleBlogContent = (event) => {
+    this.setState({
+      blogContent:event.target.value
+    })
+  }
+
+  handleBlogCategory = (event) => {
+    this.setState({
+      blogCategory:event.target.value
+    })
+  }
+
+  store = () => {
+    let data=new FormData();
+    data.append('blogTitle', this.state.blogTitle);
+    data.append('blogContent', this.state.blogContent);
+    data.append('blogCategory', this.state.blogCategory);
+    fetch('http://localhost:8000/api/storeBlog', {
+      method: 'post',
+      body:data
+    })
+    .then(function(response){
+      return response.json();
+    })
+    .then(function(json){
+      let listItems = this.state.listItems;
+      listItems.push(json.blog);
+      this.setState({
+        listItems:listItems
+      })
+      this.forceUpdate();
+    }.bind(this));
+    this.setState({
+      blogTitle:'',
+      blogContent:'',
+      blogCategory:''
+    })
+  }
 
   render() {
     return (
@@ -20,21 +74,29 @@ export default class BlogText extends React.PureComponent {
 
 
         <div className ="blogTitle">
-          <input type="textBox" className="title"/>
-
+          <h3> Blog Title   
+          <input type="textBox" value={this.state.blogTitle} onChange={this.handleBlogTitle} />
+          </h3>
         </div>
 
-
-        <div className ="inputContainer">
-          <input type="text" maxlength="2002562626" className="textInput" />
-
-          <input type="submit" value="Save" className="saveButton" />
-          <input type="submit" value="Post" className="postButton" />
-
+        <div className ="blogContent">
+          <textarea rows="20" cols="100" wrap="hard"
+           value={this.state.blogContent} onChange={this.handleBlogContent} >
+            </textarea>
         </div>
 
-        <button type="button">Click Me!</button>
+        <div className ="blogCategory">
+          <footer> Category
+           <input type= "textBox" value={this.state.blogCategory} onChange={this.handleBlogCategory}/ >
 
+          </footer>
+        </div>
+
+        <div className ="blogButton">
+
+          <input type="submit" value="Post" className="postButton" onClick={() => this.store()} />
+
+        </div>
 
 
 

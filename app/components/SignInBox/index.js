@@ -51,7 +51,7 @@ export default class SignInBox extends React.PureComponent {
       }
       else if (json.token){
         sessionStorage.setItem("token", json.token);
-        alert("Greetings, Paladin");
+        alert("Greetings, Paladin of Voltron...");
         _this.context.router.push("/blogInput");
       }
     })

@@ -20,9 +20,9 @@ export default class Blog extends React.PureComponent {
         <article className="blogBox">
 
           <header>
-            <h3>
+            <h3><strong>
             <a href="/title">{this.props.blogTitle}</a>
-
+            </strong>
             </h3>
 
           </header>
