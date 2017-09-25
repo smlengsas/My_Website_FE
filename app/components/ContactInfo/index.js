@@ -12,37 +12,27 @@ import './styleM.css';
 export default class ContactInfo extends React.PureComponent {
   render() {
     return (
-      <div className='contact-div'>
-        <div>
+      <div className='contactBox'>
 
-          <article className="contactBox">
+        <header className='header'>
+          <h1><p>Sassy Lines</p></h1>
+          <h3><p>Graphic Designs</p></h3>
+        </header>
 
-            <header className='header'>
-              <h3>
-              <b>Sassy Lines / Graphic Designs</b>
-
-              </h3>
-
-            </header>
-
-            <section>
-              <p> ~ Contemporary Design ~ </p>
-              <p> ~ Artistic Ingenuity ~ </p>
-              <p> ~ Imaginative Ideas ~ </p>
-
-            </section>
-
-            <section>
-              <p><i>What Can Design Do For You? </i></p>
-              <p>Contact Sarah Lengsas at </p>
-              <p>Sassy Lines / Graphic Designs</p>
-              <p>for all of your Design Questions, </p>
-              <p>Needs, Comments, and Ideas.</p>
-
-            </section>
-
-          </article>
+        <div className="topSection">
+          <h3><p> ~ Contemporary Design ~ </p>
+          <p> ~ Artistic Ingenuity ~ </p>
+          <p> ~ Imaginative Ideas ~ </p></h3>
         </div>
+
+        <div className="bottomSection">
+          <h2><p><i>What Can Design Do For You?</i></p></h2>
+          <p>Contact Sarah Lengsas at </p>
+          <h3><p>Sassy Lines / Graphic Designs</p></h3>
+          <p>for all of your Design Questions,
+          Needs, Comments, & Ideas.</p>
+        </div>
+
         <div className="contactLinks">
           <a href="https://www.linkedin.com/in/sarah-lengsas-759898140" className="contactBox">LinkedIn</a>
           <a href="https://smlengsas.carbonmade.com/" className="contactBox">CarbonMade</a>

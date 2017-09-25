@@ -74,20 +74,20 @@ export default class BlogText extends React.PureComponent {
 
 
         <div className ="blogTitle">
-          <h3> Blog Title   
-          <input type="textBox" value={this.state.blogTitle} onChange={this.handleBlogTitle} />
+          <h3> Blog Title
+            <p><input type="textBox" value={this.state.blogTitle} onChange={this.handleBlogTitle}/></p>
           </h3>
         </div>
 
         <div className ="blogContent">
-          <textarea rows="20" cols="100" wrap="hard"
+          <p><textarea rows="20" cols="45" wrap="hard"
            value={this.state.blogContent} onChange={this.handleBlogContent} >
-            </textarea>
+          </textarea></p>
         </div>
 
         <div className ="blogCategory">
           <footer> Category
-           <input type= "textBox" value={this.state.blogCategory} onChange={this.handleBlogCategory}/ >
+           <p><input type= "textBox" value={this.state.blogCategory} onChange={this.handleBlogCategory}/></p>
 
           </footer>
         </div>

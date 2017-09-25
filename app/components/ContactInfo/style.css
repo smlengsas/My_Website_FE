@@ -3,7 +3,7 @@
 .contactBox {
   background-color: #FFFFFF;
   color: #000000;
-  padding: 30px;
+  padding: 40px;
   width:50vw;
   height: auto;
   margin:30px;
@@ -13,9 +13,12 @@
   border: 6px solid #000000;
   box-shadow: 8px 8px #EE3B76;
   justify-content: center;
-  line-height: 50px;
-  word-spacing: normal;
   text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content:space-between;
 }
 
 .contactLinks {
@@ -28,7 +31,7 @@
 
 }
 
-.contactLinks a {
+.contactLinks {
   color: #000000;
   background-position: right;
   font-family: 'Poiret One';
@@ -37,35 +40,42 @@
   justify-content: center;
   white-space: normal;
   text-align: center;
+  font-variant: small-caps;
 }
 
-.contactBox p {
+.topSection p {
   color: #000000;
   background-position: left;
   font-family: 'Poiret One';
-  font-size: 1.5em;
+  font-size: 1.6em;
+  justify-content: center;
+  word-spacing: .08em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+.bottomSection p {
+  color: #000000;
+  background-position: left;
+  font-family: 'Poiret One';
+  font-size: 1.7em;
   font-weight: bold;
   justify-content: center;
-  word-break:keep-all;
   word-spacing: .05em;
+  line-height: 50px;
   text-align: center;
 }
 
-.contactBox b {
+.header p {
   color: #000000;
-  background-position: left;
   font-family: 'Poiret One';
-  font-size: 2.5em;
+  font-style:normal;
+  font-size: 3em;
   font-weight:bolder;
-  justify-content: center;
   text-align: center;
-}
-
-.contact-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  text-align: center;
+  line-height:70px;
+  word-spacing: normal;
+  padding-bottom: 20px;
+  font-variant: small-caps;
 }

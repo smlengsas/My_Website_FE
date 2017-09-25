@@ -14,12 +14,29 @@ export default class ImageGrid extends React.PureComponent {
   constructor() {
     super();
     this.state = {
-      images:["Mock_Portfolio_1.jpg", "Mock_Portfolio_2.jpg",
-      "Mock_Portfolio_3.jpg", "Mock_Portfolio_4.jpg",
-      "Mock_Portfolio_5.jpg", "Mock_Portfolio_6.jpg",
-      "Mock_Portfolio_7.jpg", "Mock_Portfolio_8.jpg",
-      "Mock_Portfolio_9.jpg", "Mock_Portfolio_11.jpg"]
+      images:[]
     }
+  }
+
+  componentWillMount()
+  {
+    this.getPhotos();
+  }
+
+  getPhotos = () =>
+  {
+    fetch('http://localhost:8000/api/getPhotos', {
+      method: 'GET'
+    })
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(json) {
+      this.setState({
+        images:json.photos
+      })
+      this.forceUpdate();
+    }.bind(this))
   }
 
   render() {
@@ -28,7 +45,14 @@ export default class ImageGrid extends React.PureComponent {
         <div className="grid">
         {this.state.images.map((image, index) => (
           <div className="gridItem" key={index}>
-            <img src={require("../../IMAGES/" +image)} className="gridImage" />
+            <img src={image.photoURL} className="gridImage" />
+
+            <figure className="description">
+              <p><figcaption>{image.description}</figcaption></p>
+            </figure>
+
+
+
           </div>
         ))}
         </div>

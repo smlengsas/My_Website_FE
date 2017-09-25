@@ -12,6 +12,7 @@ import './styleM.css';
 
 import NavBar from 'components/NavBar';
 import BlogText from 'components/BlogText';
+import PhotoUpload from 'components/PhotoUpload';
 
 export default class BlogInput extends React.PureComponent {
   render() {
@@ -21,6 +22,7 @@ export default class BlogInput extends React.PureComponent {
 
         <NavBar/>
         <BlogText/>
+        <PhotoUpload/>
       </div>
     );
   }

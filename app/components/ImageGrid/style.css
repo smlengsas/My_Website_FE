@@ -27,7 +27,22 @@
 .gridImage:hover {
   box-shadow:0 0 15px 0 rgba(0, 0, 0, 0.9);
   transition: all 550ms ease-in-out;
-  transform: scale(1.1);
+  transform: scale(1.15);
   border: 2px solid #000000;
+
+}
+
+.description p {
+  background-color: #FFFFFF;
+  color:#000000;
+  font-family: 'Poiret One';
+  font-weight: bolder;
+  font-variant: small-caps;
+  font-size: 1.5em;
+  align-content: center;
+  padding: 1px;
+  text-align: center;
+  margin-left: 20px;
+  width:auto;
 
 }

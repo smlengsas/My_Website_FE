@@ -1,0 +1,25 @@
+/* PhotoUpload Styles */
+.photoContainer {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 20px;
+  width: 50vw;
+  height:auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-position: left;
+  margin: 50px;
+  margin-top: 40px;
+  border-color: #000000;
+  border: 6px solid #000000;
+  box-shadow: 8px 8px #EE3B76;
+  flex-shrink: 2;
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+}
+
+.photoContainer p {
+    font-family: 'Poiret One';
+}

@@ -11,12 +11,16 @@
   padding:10px;
   font-size:1.1em;
   margin-top:100px;
+  font-family: 'Poiret One';
+  font-weight: bold;
 }
 
 .signInPassword {
   padding:10px;
   font-size:1.1em;
   margin-top:20px;
+  font-family: 'Poiret One';
+  font-weight: bold;
 }
 
 .signInButton {

@@ -29,17 +29,19 @@
   height: auto;
   width:auto;
   margin: 50px;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
   font-family: 'Poiret One';
   font-size: 2em;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .blogTitle:focus {
   outline: none;
 }
 
-.blogContent {
+.blogContent p {
   background-color: #FFFFFF;
   color: #000000;
   padding: 20px;
@@ -48,7 +50,7 @@
   height:50vh;
   word-wrap:normal;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   background-position: left;
   margin: 40px;
   font-family: 'Poiret One';
@@ -59,10 +61,6 @@
   box-shadow: 8px 8px #EE3B76;
   justify-content: center;
   flex-shrink: 1;
-  background-size: cover;
-  font-family: 'Poiret One';
-  font-size: 2em;
-
 }
 
 .blogContent:focus {
@@ -72,11 +70,14 @@
 .blogCategory {
   background-color: #EE3B76;
   color: #000000;
-  height: 20px;
+  height: auto;
   width:auto;
-  background-size: contain;
+  margin: 50px;
+  padding: 30px;
+  text-align: center;
   font-family: 'Poiret One';
-  font-size: 1em;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .blogCategory:focus {
