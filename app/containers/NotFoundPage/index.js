@@ -13,6 +13,7 @@ export default class NotFound extends React.PureComponent { // eslint-disable-li
       <h1>
         404: This is not the page you are looking for.
       </h1>
+      
     );
   }
 }
